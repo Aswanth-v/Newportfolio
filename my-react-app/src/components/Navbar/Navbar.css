@@ -116,16 +116,37 @@ h2 {
 }
 
 .social-icon {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  text-align: right;
-  padding: 20px;
-  color: yellow;
+  position:absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px; /* Space between icons */
 }
+
+.icon1, .icon2, .icon3, .icon4 {
+  font-size: 40px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.icon1:hover{
+  color: #6cc644;  /* Change color on hover */
+}
+
+.icon2:hover{
+  color: #0077b5;  /* Change color on hover */
+}
+
+.icon3:hover{
+  color:#962fbf ;
+}
+
+.icon4:hover{
+  color:#25d366 ;
+}
+
 
 @media (max-width: 1231px) {
   .overlay-text {
@@ -159,11 +180,12 @@ h2 {
   }
 
   .social-icon {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    bottom: 10px;
-    right: 10px;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px
   }
 }
 
@@ -198,6 +220,36 @@ h2 {
   }
 
   .social-icon {
-    padding: 10px;
-  }
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.icon1 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.icon2 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 30px; /* Add more gap by increasing bottom */
+    right: 0px;
+}
+
+.icon3 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 60px; /* Increase bottom to create more gap */
+    right: 0px;
+}
+
+.icon4 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 90px; /* Further increase bottom to add more gap */
+    right: 0px;
+}
 }

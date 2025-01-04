@@ -1,7 +1,12 @@
 import React from 'react';
 import './Navbar.css';
+
 import videobg from "../../assets/portvido.mp4";
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faInstagram, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+
 
 const Navbar = () => {
   const [text] = useTypewriter({
@@ -25,13 +30,29 @@ const Navbar = () => {
           <div className='but-div'>
           <button className='button'>About Me</button>
           </div>
-          <div>
+        </div>
+        
+        <div>
             <h2 className='chat'>Let's Chat</h2>
           </div>
-         
-        </div>
+       
         <div className='social-icon'>
-            <h1>icon</h1>
+          
+        <a href="https://github.com/aswanth" target="_blank" rel="noopener noreferrer" className='icon1'>
+                <FontAwesomeIcon icon={faGithub} /> 
+            </a>
+            
+            <a href="https://linkedin.com/in/aswanth" target="_blank" rel="noopener noreferrer" className='icon2'>
+                <FontAwesomeIcon icon={faLinkedin} /> 
+            </a>
+
+            <a href= "" target="_blank" rel="noopener noreferrer" className='icon3'>
+            <FontAwesomeIcon icon={faInstagram}/>
+            </a>
+
+            <a href= "" target="_blank" rel="noopener noreferrer" className='icon4'>
+            <FontAwesomeIcon icon={faWhatsapp}/>
+            </a>
           </div>
         </div>
       

@@ -20,4 +20,11 @@ html, body {
   html::-webkit-scrollbar {
     display: none;
   }
-    
+  :root {
+    --primary-color:#1ce480;
+    --secondary-color: #d0f7e2;
+    --accent-color: #1ce480;
+    --text-color: white;
+    --button-border: rgba(69, 236, 39, 0.5);
+  }
+      
