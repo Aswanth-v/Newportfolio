@@ -1,0 +1,203 @@
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-30%, -50%);
+  text-align: left;
+  color: white;
+  font-family: Roboto Mono;
+}
+
+.overlay-text p {
+  font-size: 1.3rem;
+  margin: 0 0 5px;
+}
+
+.overlay-text h1 {
+  font-size: 4rem;
+  margin: 10px 0;
+}
+
+.typewriter-effect {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-family: 'Georgia', serif;
+  margin: 0;
+}
+
+.animated-text {
+  font-weight: bold;
+  color:var(--primary-color);
+  font-size: 2rem;
+}
+
+.button {
+  margin: 6px 0;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 2px solid rgba(69, 236, 39, 0.5);
+  background: transparent;
+  color:var(--primary-color);
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.button:hover {
+  border-color:var(--primary-color);
+}
+
+.but-div {
+  padding-top: 20px;
+}
+
+  .chat {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-align: left;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-style: oblique;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  text-align: center;
+
+
+  
+}
+
+.chat:hover {
+  color:var(--primary-color);
+}
+
+.chat::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 2px;
+  background-color:var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.chat:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  padding: 20px;
+  color: yellow;
+}
+
+@media (max-width: 1231px) {
+  .overlay-text {
+    left: 10%;
+    top: 45%;
+    transform: translate(-10%, -45%);
+    text-align: center;
+  }
+
+  .overlay-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .overlay-text p {
+    font-size: 1rem;
+  }
+
+  .animated-text {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .chat {
+    font-size: 1rem;
+ 
+    
+  }
+
+  .social-icon {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-text {
+    left: 5%;
+    top: 40%;
+    transform: translate(-5%, -40%);
+  }
+
+  .overlay-text h1 {
+    font-size: 2rem;
+  }
+
+  .overlay-text p {
+    font-size: 0.9rem;
+  }
+
+  .animated-text {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 6px;
+  }
+
+  .chat {
+    font-size: 0.9rem;
+ 
+    padding:30px;
+  }
+
+  .social-icon {
+    padding: 10px;
+  }
+}

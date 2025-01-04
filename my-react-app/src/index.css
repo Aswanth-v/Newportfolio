@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+/* For Webkit browsers (Chrome, Safari) */
+html, body {
+    overflow: -moz-scrollbars-none;  /* For Firefox (Legacy) */
+    -ms-overflow-style: none;        /* For IE and Edge */
+    scrollbar-width: none;           /* For Firefox (Modern) */
+  }
+  
+  /* Hide scrollbar for Webkit browsers */
+  html::-webkit-scrollbar {
+    display: none;
+  }
+    

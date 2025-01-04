@@ -1,0 +1,12 @@
+.hero-overlay {
+  height: 100vh;  /* Full viewport height */
+  display: flex;
+  align-items: center;
+  background: linear-gradient(45deg,rgb(0, 0, 0),rgb(17, 17, 17));
+
+
+
+  
+  color: white;
+  font-size: 2rem;
+}
