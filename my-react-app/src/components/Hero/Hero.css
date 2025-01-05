@@ -1,17 +1,19 @@
 .hero-overlay {
-  height: 100vh;  /* Full viewport height */
+  height: 100vh; /* Full viewport height */
   display: flex;
+  flex-direction: row; /* Default row direction */
   background: linear-gradient(45deg, rgb(0, 0, 0), rgb(17, 17, 17));
-  top: 50%;  /* Moves down */
-  left: 20%;  /* Moves right */
- padding:10%; 
+  top: 50%;
+  left: 20%;
+  padding: 10%;
   font-family: 'Roboto Mono', monospace;
 }
+
 .para {
   color: var(--secondary-color);
   display: inline-block;
   position: relative;
-  padding-bottom: 5px;  /* Space between text and underline */
+  padding-bottom: 5px; /* Space between text and underline */
 }
 
 .para::after {
@@ -20,18 +22,51 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 2px;  /* Thickness of underline */
-  background-color: var(--primary-color);  /* Custom underline color */
-  border-radius: 2px;  /* Optional: Smooth edges */
+  height: 2px; /* Thickness of underline */
+  background-color: var(--primary-color); /* Custom underline color */
+  border-radius: 2px; /* Optional: Smooth edges */
 }
 
-.intro-head{
-  color:var(--primary-color);
-  padding-top:5px;
+.intro-head {
+  color: var(--primary-color);
+  padding-top: 5px;
 }
 
-.who-iam-para{
-  color:var(--secondary-color);
-  max-width:50%;
- line-height:1.3rem;
+.who-iam-para {
+  color: var(--secondary-color);
+  max-width: 85;
+  line-height: 1.3rem;
+  order: 1;
+}
+.hero-textsphere {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center; /* Aligns vertically in the center of the flex container */
+  justify-content: center;
+  color: white;
+  order: 2;
+  margin-top: -20px; /* Adjust this value to move it higher */
+}
+
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .hero-overlay {
+    flex-direction: column; /* Stack the content vertically */
+  }
+
+  .who-iam-para {
+    max-width: 100%; /* Full width */
+    order: 1; /* Ensure it's the first section */
+    padding: 20px; /* Optional: add some padding for better spacing */
+  }
+
+  .hero-textsphere {
+    marg-left:30px;
+    margin-top: 40px; /* Ensure the tag cloud doesn't stick to the text */
+    height: 300px; /* Adjust size for smaller screens */
+    width: 300px; /* Adjust size for smaller screens */
+    order: 2; /* Position it below the "Who I Am" section */
+  }
 }
