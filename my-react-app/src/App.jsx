@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Hero from './components/Hero/Hero.jsx'
 import './index.css';
+import Works from './components/works/Works.jsx';
 
 
 
@@ -12,7 +13,7 @@ function App() {
       <Navbar />
      
       <Hero who={who}/>
-    
+      <Works/>
     </div>
     
   );

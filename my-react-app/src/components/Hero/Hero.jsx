@@ -6,7 +6,7 @@ function Hero({who}) {
   return (
     <div className='hero-overlay'>
       <div>
-      <p className='para'>0.1</p>
+      <p className='para'>0.1 &nbsp; Intro</p>
       <h1 className='intro-head'>Who I Am</h1>
       <p className='who-iam-para'>
         {who}

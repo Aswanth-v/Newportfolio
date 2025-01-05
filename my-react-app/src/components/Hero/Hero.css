@@ -5,7 +5,7 @@
   background: linear-gradient(45deg, rgb(0, 0, 0), rgb(17, 17, 17));
   top: 50%;
   left: 20%;
-  padding: 10%;
+  padding: 5%;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -44,7 +44,7 @@
   display: flex;
   align-items: center; /* Aligns vertically in the center of the flex container */
   justify-content: center;
-  color: white;
+  color:#00CED1;
   order: 2;
   margin-top: -20px; /* Adjust this value to move it higher */
 }
